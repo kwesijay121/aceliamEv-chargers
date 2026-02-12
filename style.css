@@ -262,3 +262,21 @@ h2{
   opacity: 1;
   transform: translateY(0);
 }
+.card {
+  background: linear-gradient(145deg, #0f1c2e, #0a1624);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
