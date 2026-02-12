@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #0b0f14; color: #eaf0f6; }
+a { text-decoration: none; color: inherit; }
+
+.container { width: min(980px, 92%); margin: 0 auto; }
+
+.top { position: sticky; top: 0; background: rgba(11,15,20,0.9); border-bottom: 1px solid #1f2a36; }
+.top .container { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+.brand { font-weight: 700; letter-spacing: 0.5px; }
+
+.hero { padding: 48px 0 18px; }
+.hero h1 { font-size: 40px; margin: 0 0 10px; }
+.hero p { color: #b8c4d0; max-width: 650px; margin: 0 0 18px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.section { padding: 26px 0; }
+.section h2 { margin: 0 0 14px; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+
+.card { background: #101823; border: 1px solid #1f2a36; border-radius: 14px; padding: 16px; }
+.card p { color: #c9d6e2; }
+
+.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid #2b3a4c; background: #162235; }
+.btn:hover { filter: brightness(1.08); }
+.primary { background: #2b8a3e; border-color: #2b8a3e; }
+.outline { background: transparent; }
+
+.footer { text-align: center; padding: 26px 0 40px; color: #94a6b8; }
+.product-img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+.logo{
+  height:40px;
+  margin-right:10px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  font-weight:700;
+}
+.price{
+  background:#2b8a3e;
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:8px;
+  margin:10px 0;
+  font-weight:bold;
+}
+.whatsapp-float{
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #2b8a3e;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+  border: 1px solid #2b8a3e;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+.whatsapp-float:hover{
+  filter: brightness(1.08);
+}
+.hero{
+  padding: 50px 0 22px;
+  background: radial-gradient(800px 400px at 20% 10%, rgba(43,138,62,0.25), transparent 60%),
+              radial-gradient(600px 350px at 80% 30%, rgba(22,34,53,0.7), transparent 55%);
+  border-radius: 18px;
+  margin-top: 18px;
+}
+
+.hero-card{
+  padding: 26px;
+  border: 1px solid #1f2a36;
+  border-radius: 18px;
+  background: rgba(16,24,35,0.75);
+  backdrop-filter: blur(6px);
+}
+
+.kicker{
+  display: inline-block;
+  color: #9adbb0;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0 0 10px;
+}
+
+.sub{
+  color:#b8c4d0;
+  max-width: 720px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top: 16px;
+}
+
+.trust{
+  display:flex;
+  gap:10px;
+  flex-
