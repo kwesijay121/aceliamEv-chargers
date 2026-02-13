@@ -280,3 +280,21 @@ h2{
   border-radius: 12px;
   margin-bottom: 15px;
 }
+.trust {
+  margin-top: 60px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.trust h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.trust p {
+  opacity: 0.9;
+  font-size: 16px;
+}
