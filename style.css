@@ -599,6 +599,8 @@ p{ color: var(--muted); margin: 0 0 14px 0; }
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 2;
+mix-blend-mode: screen;
   background-image: 
     radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.8), transparent),
     radial-gradient(1.5px 1.5px at 70% 40%, rgba(255,255,255,0.7), transparent),
