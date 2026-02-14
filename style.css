@@ -595,7 +595,7 @@ p{ color: var(--muted); margin: 0 0 14px 0; }
 }
 
 /* Sparkle container */
-.hero::after {
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
