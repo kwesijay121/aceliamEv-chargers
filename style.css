@@ -619,6 +619,14 @@ p{ color: var(--muted); margin: 0 0 14px 0; }
     z-index: 2;
 }
 
+.hero-card {
+    position: relative;
+    z-index: 5;
+}
+
+.hero::before {
+    z-index: 4;
+}
 /* Sparkle container */
 .hero::before {
   content: "";
@@ -634,6 +642,8 @@ mix-blend-mode: screen;
     radial-gradient(2px 2px at 10% 85%, rgba(255,255,255,0.8), transparent);
   animation: sparkleFloat 6s ease-in-out infinite;
   pointer-events: none;
+  opacity: 1;
+filter: drop-shadow(0 0 10px rgba(255,255,255,.9));
 }
 @keyframes sparkleFloat {
   0%   { transform: translateY(0) translateX(0); }
