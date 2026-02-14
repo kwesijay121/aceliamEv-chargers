@@ -593,6 +593,31 @@ p{ color: var(--muted); margin: 0 0 14px 0; }
   overflow: hidden;
   background: linear-gradient(135deg, #0f1c2e, #08121c);
 }
+/* ===== Visible Sparkle Layer ===== */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+
+    background-image:
+        radial-gradient(3px 3px at 10% 20%, rgba(255,255,255,.95), transparent 60%),
+        radial-gradient(3px 3px at 25% 70%, rgba(255,255,255,.85), transparent 60%),
+        radial-gradient(2px 2px at 40% 35%, rgba(255,255,255,.9), transparent 60%),
+        radial-gradient(3px 3px at 60% 60%, rgba(255,255,255,.9), transparent 60%),
+        radial-gradient(2px 2px at 75% 25%, rgba(255,255,255,.95), transparent 60%),
+        radial-gradient(3px 3px at 90% 80%, rgba(255,255,255,.9), transparent 60%);
+
+    filter: drop-shadow(0 0 12px rgba(255,255,255,.7));
+    mix-blend-mode: screen;
+
+    animation: sparkleFloat 5s ease-in-out infinite;
+}
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
 
 /* Sparkle container */
 .hero::before {
@@ -607,49 +632,9 @@ mix-blend-mode: screen;
     radial-gradient(2px 2px at 40% 70%, rgba(255,255,255,0.9), transparent),
     radial-gradient(1.5px 1.5px at 85% 80%, rgba(255,255,255,0.6), transparent),
     radial-gradient(2px 2px at 10% 85%, rgba(255,255,255,0.8), transparent);
-  animation: sparkleMove 12s linear infinite;
+  animation: sparkleFloat 6s ease-in-out infinite;
   pointer-events: none;
 }
-
-/* Slow floating animation */
-@keyframes sparkleMove {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-}
-}
-
-
-/* ===== Visible Sparkle Layer ===== */
-.hero::before{
-    content:"";
-    position:relative; overflow:hidden;
-    inset:0;
-    z-index:999;
-    pointer-events:none;
-
-    background-image:
-        radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,.95), transparent 60%),
-        radial-gradient(2px 2px at 25% 70%, rgba(255,255,255,.85), transparent 60%),
-        radial-gradient(1.5px 1.5px at 40% 35%, rgba(255,255,255,.9), transparent 60%),
-        radial-gradient(2px 2px at 60% 60%, rgba(255,255,255,.8), transparent 60%),
-        radial-gradient(1.5px 1.5px at 75% 25%, rgba(255,255,255,.95), transparent 60%),
-        radial-gradient(2px 2px at 90% 80%, rgba(255,255,255,.9), transparent 60%);
-
-    opacity: .1;
-    filter: drop-shadow(0 0 10px rgba(255,255,255,.7));
-    mix-blend-mode: screen;
-
-    animation: sparkleFloat 6s ease-in-out infinite;
-}
-
 @keyframes sparkleFloat {
   0%   { transform: translateY(0) translateX(0); }
   50%  { transform: translateY(-10px) translateX(6px); }
