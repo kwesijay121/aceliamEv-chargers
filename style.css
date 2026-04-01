@@ -650,3 +650,22 @@ filter: drop-shadow(0 0 10px rgba(255,255,255,.9));
   50%  { transform: translateY(-10px) translateX(6px); }
   100% { transform: translateY(0) translateX(0); }
 }
+
+.product-card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: white;
+    margin-top: 10px;
+}
