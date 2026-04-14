@@ -152,18 +152,30 @@ Fast nationwide delivery and professional installation available.
     <a class="btn" href="https://wa.me/233257432903">Order</a>
 </div>
 
-        <div class="card reveal">
-<img src="Images/home7kw.jpeg" class="product-img">
-  <h3>7kW Home Charger</h3>
-  <p>Fast home charging solution for your EV.</p>
-  <h4 class="price">GHS4,500.00</h4>
-  <a class="btn" href="https://wa.me/233257432903?text=Hi%20I%20want%20the%207kW%20home%20charger">Order</a>
-</div>
+<div class="card reveal">
 
-          <p>Fast home charging solution for your EV.</p>
-          <a class="btn" href="https://wa.me/233257432903?text=Hi%20I%20want%20the%207kW%20home%20charger">Order</a>
-        </div>
-      </div>
+  <img id="mainImage" src="Images/7kw-1.jpg" class="product-img">
+
+  <div class="thumbnail-row">
+    <img src="Images/7kw-1.jpg" onclick="changeImage(this)">
+    <img src="Images/7kw-2.jpg" onclick="changeImage(this)">
+    <img src="Images/7kw-3.jpg" onclick="changeImage(this)">
+  </div>
+
+ <h3>7kW Home Charger</h3>
+
+<p>Fast home charging solution for your EV.</p>
+
+<p style="color:green; font-weight:bold;">
+✔ Installation Available in Accra & Tema
+</p>
+
+<h4 class="price">GHS4,500.00</h4>
+
+<a class="btn" href="https://wa.me/233257432903?text=Hi%20I%20want%20the%207kW%20home%20charger">
+  Order
+</a>
+</div>
     </section>
 
     <section id="contact" class="section">
@@ -294,10 +306,14 @@ reveals.forEach(el => observer.observe(el));
   <p>ACELIAM EV Chargers – Powering Ghana’s Future ⚡</p>
 </section>
 
+  <script>
+function changeImage(smallImg) {
+  document.getElementById("mainImage").src = smallImg.src;
+}
+</script>
+
 </body>
 </html>
-
-
 
 
 
