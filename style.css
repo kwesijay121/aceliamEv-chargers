@@ -28,10 +28,12 @@ a { text-decoration: none; color: inherit; }
 .outline { background: transparent; }
 
 .footer { text-align: center; padding: 26px 0 40px; color: #94a6b8; }
-.product-img{
-  width:100%;
-  border-radius:10px;
-  margin-bottom:10px;
+.product-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .logo{
   height:40px;
@@ -668,4 +670,14 @@ filter: drop-shadow(0 0 10px rgba(255,255,255,.9));
 .product-card h3 {
     color: white;
     margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .product-img {
+    max-height: 200px;
+  }
+
+  .thumbnail-row img {
+    width: 50px;
+    height: 50px;
+  }
 }
