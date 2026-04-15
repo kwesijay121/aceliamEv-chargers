@@ -688,4 +688,13 @@ filter: drop-shadow(0 0 10px rgba(255,255,255,.9));
     height: 180px !important;
   }
 }
+.charger-7kw {
+  height: 180px !important;
+  object-fit: contain;
+}
+@media (max-width: 600px) {
+  .charger-7kw {
+    height: 150px !important;
+  }
+}
 
