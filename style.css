@@ -681,4 +681,17 @@ filter: drop-shadow(0 0 10px rgba(255,255,255,.9));
     height: 45px;
   }
 }
+/* FORCE ALL PRODUCT IMAGES TO BE SAME SIZE */
+.product-card img,
+.product-img {
+  width: 100%;
+  height: 220px !important;
+  object-fit: contain !important;
+}
+  @media (max-width: 600px) {
+  .product-card img,
+  .product-img {
+    height: 180px !important;
+  }
+}
 
